@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CareConnect - Q&amp;A</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        
+        /* Color Palette */
+        .text-primary-blue { color: #2E86AB; }
+        .bg-primary-blue { background-color: #2E86AB; }
+        .border-primary-blue { border-color: #2E86AB; }
+        
+        .text-accent-teal { color: #457b9d; }
+        .bg-accent-teal { background-color: #A8DADC; }
+        
+        .text-highlight-coral { color: #E63946; }
+        .bg-highlight-coral { background-color: #E63946; }
+        
+        /* Decorative Shapes */
+        .circle-decoration {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .card-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container bg-gray-50 flex items-center justify-center relative">
+<!-- Decorative Background Elements (Solid Colors, No Gradients) -->
+<div class="circle-decoration bg-blue-100 opacity-50" style="width: 600px; height: 600px; top: -200px; left: -200px;"></div>
+<div class="circle-decoration bg-teal-100 opacity-50" style="width: 500px; height: 500px; bottom: -150px; right: -150px;"></div>
+<!-- Subtle Pattern Overlay -->
+<div class="absolute inset-0 z-0 opacity-10" style="background-image: radial-gradient(#2E86AB 1px, transparent 1px); background-size: 30px 30px;"></div>
+<!-- Main Content Wrapper -->
+<div class="z-10 flex flex-col items-center justify-center w-full max-w-4xl h-full pb-10">
+<!-- Branding Header -->
+<div class="flex items-center gap-4 mb-10 animate-fade-in-down">
+<div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-md border-2 border-primary-blue">
+<i class="fa-solid fa-heart-pulse text-4xl text-highlight-coral"></i>
+</div>
+<div>
+<h2 class="text-4xl font-extrabold text-gray-800 font-poppins tracking-tight">CareConnect</h2>
+<p class="text-primary-blue font-semibold tracking-widest uppercase text-sm">The Uber for Caregivers</p>
+</div>
+</div>
+<!-- Central Card -->
+<div class="bg-white rounded-3xl p-16 w-full text-center card-shadow border-t-8 border-primary-blue relative">
+<!-- Floating Icon Top -->
+<div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
+<div class="w-20 h-20 bg-primary-blue rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+<i class="fa-solid fa-comments text-3xl text-white"></i>
+</div>
+</div>
+<!-- Title Content -->
+<div class="mt-6">
+<h1 class="text-6xl font-extrabold text-gray-800 font-poppins mb-4">Questions &amp; Answers</h1>
+<div class="w-24 h-1 bg-accent-teal mx-auto rounded-full mb-6"></div>
+<p class="text-2xl text-gray-500 font-light italic">"Thank you for your time."</p>
+</div>
+</div>
+<!-- Bottom Mission Statement -->
+<div class="mt-12 text-center">
+<p class="text-xl font-bold text-gray-800 mb-3 tracking-wide">On-Demand Care, Anytime.</p>
+<div class="flex items-center justify-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100">
+<p class="text-gray-600 font-medium">Let's restore independence — one appointment at a time.</p>
+<i class="fa-solid fa-heart text-highlight-coral animate-pulse"></i>
+</div>
+</div>
+</div>
+<!-- Footer Decorative Bar -->
+<div class="absolute bottom-0 left-0 w-full h-3 bg-primary-blue"></div>
+</div>
+</body>
+</html>

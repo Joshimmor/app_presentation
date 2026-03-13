@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CareConnect - Title Slide</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff; /* Warm White base */
+            position: relative;
+            display: flex;
+            overflow: hidden;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .text-primary-blue {
+            color: #2E86AB;
+        }
+        .bg-primary-blue {
+            background-color: #2E86AB;
+        }
+        .text-accent-teal {
+            color: #A8DADC;
+        }
+        .bg-accent-teal {
+            background-color: #A8DADC;
+        }
+        .text-highlight-coral {
+            color: #E63946;
+        }
+        .bg-highlight-coral {
+            background-color: #E63946;
+        }
+        
+        /* Custom Shapes for Background */
+        .circle-decor {
+            position: absolute;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<a href="value.html">
+    <button type="button" class="z-30 absolute top-4 right-4 bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Next</button> 
+</a>
+<!-- Decorative Background Elements (Solid colors, no gradients) -->
+<div class="circle-decor bg-blue-50 w-[800px] h-[800px] -top-[200px] -right-[200px] opacity-50 z-0"></div>
+<div class="circle-decor bg-accent-teal w-[300px] h-[300px] bottom-[50px] left-[50px] opacity-20 z-0"></div>
+<div class="circle-decor bg-primary-blue w-[600px] h-[600px] -bottom-[300px] -right-[100px] opacity-10 z-0"></div>
+<!-- Main Layout -->
+<div class="flex flex-row w-full h-full z-10">
+<!-- Left Column: Content -->
+<div class="w-7/12 flex flex-col justify-center px-24 relative">
+<!-- Brand Badge -->
+<div class="mb-8">
+<div class="inline-flex items-center space-x-2 bg-blue-50 rounded-full px-4 py-2 border border-blue-100">
+<i class="fa-solid fa-heart-pulse text-highlight-coral text-lg"></i>
+<p class="text-primary-blue font-semibold tracking-wide text-sm uppercase">Healthcare Innovation</p>
+</div>
+</div>
+<!-- Main Title -->
+<div class="mb-4">
+<h1 class="font-poppins font-extrabold text-7xl text-gray-800 leading-tight">
+                    Care<span class="text-primary-blue">Connect</span>
+</h1>
+</div>
+<!-- Tagline & Subtitle -->
+<div class="mb-10 space-y-4">
+<h2 class="font-poppins font-bold text-3xl text-highlight-coral tracking-tight">
+                    "The Uber for Caregivers"
+                </h2>
+<p class="text-xl text-gray-600 font-light leading-relaxed max-w-lg border-l-4 border-accent-teal pl-6">
+                    On-Demand Care, Anytime. Restoring Independence for the Elderly.
+                </p>
+</div>
+<!-- Metadata Section -->
+<div class="mt-12 pt-8 border-t border-gray-200 w-full max-w-md">
+<div class="grid grid-cols-2 gap-y-4">
+<div>
+<p class="text-xs text-gray-400 uppercase font-bold tracking-wider mb-1">Presented By</p>
+<p class="text-gray-800 font-medium font-poppins text-lg">{Team Name}</p>
+</div>
+<div>
+<p class="text-xs text-gray-400 uppercase font-bold tracking-wider mb-1">Student Name</p>
+<p class="text-gray-800 font-medium font-poppins text-lg">{Student Name}</p>
+</div>
+<div>
+<p class="text-xs text-gray-400 uppercase font-bold tracking-wider mb-1">Date</p>
+<p class="text-gray-800 font-medium font-poppins text-lg">{Date}</p>
+</div>
+<div>
+<p class="text-xs text-gray-400 uppercase font-bold tracking-wider mb-1">Course</p>
+<p class="text-gray-800 font-medium font-poppins text-lg">CSC 336</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Hero -->
+<div class="w-5/12 flex items-center justify-center relative">
+<!-- Hero Card Composition -->
+<div class="relative w-96 h-96 bg-white rounded-3xl shadow-2xl flex flex-col items-center justify-center z-20 transform rotate-3 border border-gray-50">
+<div class="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+<i class="fa-solid fa-hand-holding-heart text-5xl text-primary-blue"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-800 font-poppins mb-2">Instant Care</h3>
+<p class="text-center text-gray-500 px-8 text-sm leading-relaxed">Connecting certified caregivers with families in need within minutes.</p>
+<!-- Floating Elements simulating UI -->
+<div class="absolute -right-12 top-10 bg-white p-3 rounded-xl shadow-lg border border-gray-100 flex items-center space-x-3 animate-pulse">
+<div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+<i class="fa-solid fa-check text-green-500 text-xs"></i>
+</div>
+<div>
+<p class="text-xs font-bold text-gray-800">Verified CNA</p>
+<p class="text-[10px] text-gray-400">Arriving in 4 min</p>
+</div>
+</div>
+<div class="absolute -left-12 bottom-5 bg-white p-3 rounded-xl shadow-lg border border-gray-100 flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+<i class="fa-solid fa-shield-halved text-primary-blue text-xs"></i>
+</div>
+<div>
+<p class="text-xs font-bold text-gray-800">Coverd by Insurance</p>
+<p class="text-[10px] text-gray-400">Up to 100% Coverage</p>
+</div>
+</div>
+</div>
+<!-- Pattern behind the card -->
+<div class="absolute w-80 h-80 bg-accent-teal rounded-3xl transform -rotate-6 top-[20%] right-[15%] z-10"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CareConnect - User Journeys</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 40px 60px;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Color Palette */
+        .text-primary-blue { color: #2E86AB; }
+        .bg-primary-blue { background-color: #2E86AB; }
+        .border-primary-blue { border-color: #2E86AB; }
+        
+        .text-accent-teal { color: #457b9d; }
+        .bg-accent-teal { background-color: #A8DADC; }
+        .bg-accent-teal-dark { background-color: #457b9d; }
+        
+        .text-highlight-coral { color: #E63946; }
+        .bg-highlight-coral { background-color: #E63946; }
+        .border-highlight-coral { border-color: #E63946; }
+        
+        .bg-dark-navy { background-color: #1D3557; }
+        .text-dark-navy { color: #1D3557; }
+        .border-dark-navy { border-color: #1D3557; }
+
+        /* Journey Line Styles */
+        .journey-line {
+            position: absolute;
+            top: 24px;
+            left: 40px;
+            right: 40px;
+            height: 2px;
+            background-color: #e5e7eb;
+            z-index: 0;
+        }
+        
+        .step-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            position: relative;
+            transition: transform 0.2s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<a href="datamodel.html">
+    <button type="button" class="z-30 absolute top-4 right-4 bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Next</button> 
+</a>
+<!-- Header Section -->
+<div class="flex items-end justify-between mb-8 border-b-2 border-gray-100 pb-4 shrink-0">
+<div>
+<div class="flex items-center space-x-3 mb-2">
+<i class="fa-solid fa-map-location-dot text-highlight-coral text-2xl"></i>
+<h1 class="text-4xl font-extrabold text-gray-800 font-poppins">How It Works</h1>
+</div>
+<p class="text-xl text-gray-500 font-light ml-1">Seamless Journeys for <span class="text-primary-blue font-semibold">Caregivers, Families &amp; The System</span></p>
+</div>
+<div class="bg-blue-50 px-4 py-2 rounded-lg">
+<span class="text-primary-blue font-semibold text-sm tracking-wide uppercase">User Experience</span>
+</div>
+</div>
+<!-- Main Content: 3 Stacked Cards -->
+<div class="flex flex-col gap-5 flex-grow justify-center">
+<!-- Journey 1: Dorothy (Care Receiver) -->
+<div class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm flex h-40 relative overflow-hidden">
+<!-- Left: Persona -->
+<div class="w-64 bg-blue-50 flex flex-col items-center justify-center p-4 border-r border-blue-100 shrink-0">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-2 border-2 border-primary-blue">
+<i class="fa-solid fa-user text-3xl text-primary-blue"></i>
+</div>
+<p class="font-bold text-gray-800 font-poppins text-lg">Dorothy, 78</p>
+<p class="text-xs text-gray-500 font-medium bg-white px-2 py-1 rounded-full">Care Receiver</p>
+</div>
+<!-- Right: Timeline -->
+<div class="flex-grow relative flex items-center px-12">
+<div class="journey-line"></div>
+<div class="w-full flex justify-between relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-primary-blue text-white shadow-md mb-2">
+<i class="fa-solid fa-mobile-screen"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Requests Care</p>
+<p class="text-[10px] text-gray-500 mt-1">"Doctor Visit" selected</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-white border-2 border-primary-blue text-primary-blue shadow-sm mb-2">
+<i class="fa-solid fa-user-nurse"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Match Found</p>
+<p class="text-[10px] text-gray-500 mt-1">Marcus (CNA) accepts</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-white border-2 border-primary-blue text-primary-blue shadow-sm mb-2">
+<i class="fa-solid fa-location-arrow"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Real-Time Track</p>
+<p class="text-[10px] text-gray-500 mt-1">See ETA &amp; Photo</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-green-500 text-white shadow-md mb-2">
+<i class="fa-solid fa-star"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Complete &amp; Rate</p>
+<p class="text-[10px] text-gray-500 mt-1">5-star service</p>
+</div>
+</div>
+</div>
+<!-- Tag -->
+<div class="absolute top-0 right-0 bg-primary-blue text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg">
+                    THE REQUEST
+                </div>
+</div>
+<!-- Journey 2: Sarah (Caregiver) -->
+<div class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm flex h-40 relative overflow-hidden">
+<!-- Left: Persona -->
+<div class="w-64 bg-teal-50 flex flex-col items-center justify-center p-4 border-r border-teal-100 shrink-0">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-2 border-2 border-accent-teal">
+<i class="fa-solid fa-user-nurse text-3xl text-accent-teal"></i>
+</div>
+<p class="font-bold text-gray-800 font-poppins text-lg">Sarah, CNA</p>
+<p class="text-xs text-gray-500 font-medium bg-white px-2 py-1 rounded-full">Caregiver</p>
+</div>
+<!-- Right: Timeline -->
+<div class="flex-grow relative flex items-center px-12">
+<div class="journey-line"></div>
+<div class="w-full flex justify-between relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-accent-teal-dark text-white shadow-md mb-2">
+<i class="fa-solid fa-id-card"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Create Profile</p>
+<p class="text-[10px] text-gray-500 mt-1">Upload Certs &amp; ID</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-white border-2 border-accent-teal text-accent-teal shadow-sm mb-2">
+<i class="fa-solid fa-shield-check"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Verification</p>
+<p class="text-[10px] text-gray-500 mt-1">Background Check</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-white border-2 border-accent-teal text-accent-teal shadow-sm mb-2">
+<i class="fa-solid fa-toggle-on"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Set Availability</p>
+<p class="text-[10px] text-gray-500 mt-1">Ready to work</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-accent-teal-dark text-white shadow-md mb-2">
+<i class="fa-solid fa-bell"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Get Requests</p>
+<p class="text-[10px] text-gray-500 mt-1">Nearby jobs alert</p>
+</div>
+</div>
+</div>
+<!-- Tag -->
+<div class="absolute top-0 right-0 bg-accent-teal-dark text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg">
+                    ONBOARDING
+                </div>
+</div>
+<!-- Journey 3: Billing System (Backend) -->
+<div class="card-hover bg-white border border-gray-100 rounded-2xl shadow-sm flex h-40 relative overflow-hidden">
+<!-- Left: Persona -->
+<div class="w-64 bg-gray-50 flex flex-col items-center justify-center p-4 border-r border-gray-200 shrink-0">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm mb-2 border-2 border-dark-navy">
+<i class="fa-solid fa-server text-3xl text-dark-navy"></i>
+</div>
+<p class="font-bold text-gray-800 font-poppins text-lg">System</p>
+<p class="text-xs text-gray-500 font-medium bg-white px-2 py-1 rounded-full">Insurance Flow</p>
+</div>
+<!-- Right: Timeline -->
+<div class="flex-grow relative flex items-center px-12">
+<div class="journey-line"></div>
+<div class="w-full flex justify-between relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-dark-navy text-white shadow-md mb-2">
+<i class="fa-solid fa-database"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Data Capture</p>
+<p class="text-[10px] text-gray-500 mt-1">Visit logs recorded</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-white border-2 border-dark-navy text-dark-navy shadow-sm mb-2">
+<i class="fa-solid fa-file-invoice"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Auto-Claim</p>
+<p class="text-[10px] text-gray-500 mt-1">Sent to Insurer</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-white border-2 border-dark-navy text-dark-navy shadow-sm mb-2">
+<i class="fa-solid fa-envelope-open-text"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Family Notify</p>
+<p class="text-[10px] text-gray-500 mt-1">Summary sent</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center w-32">
+<div class="step-circle bg-green-600 text-white shadow-md mb-2">
+<i class="fa-solid fa-money-bill-transfer"></i>
+</div>
+<p class="text-xs font-bold text-gray-800">Payout</p>
+<p class="text-[10px] text-gray-500 mt-1">Hourly wage paid</p>
+</div>
+</div>
+</div>
+<!-- Tag -->
+<div class="absolute top-0 right-0 bg-dark-navy text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg">
+                    BILLING &amp; OPS
+                </div>
+</div>
+</div>
+</div>
+</body>
+</html>

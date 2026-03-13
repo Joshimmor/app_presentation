@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CareConnect - Value Quadrant</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 40px 60px;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Color Palette */
+        .text-primary-blue { color: #2E86AB; }
+        .bg-primary-blue { background-color: #2E86AB; }
+        .border-primary-blue { border-color: #2E86AB; }
+        
+        .text-accent-teal { color: #457b9d; }
+        .bg-accent-teal { background-color: #A8DADC; }
+        .border-accent-teal { border-color: #457b9d; }
+
+        .text-highlight-coral { color: #E63946; }
+        .bg-highlight-coral { background-color: #E63946; }
+        .border-highlight-coral { border-color: #E63946; }
+
+        .text-dark-navy { color: #1D3557; }
+        .bg-dark-navy { background-color: #1D3557; }
+        .border-dark-navy { border-color: #1D3557; }
+
+        /* Card Styling */
+        .quad-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<a href="revenue.html">
+    <button type="button" class="z-30 absolute top-4 right-4 bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Next</button> 
+</a>
+<!-- Header Section -->
+<div class="flex items-end justify-between mb-2 border-b-2 border-gray-100 pb-4">
+<div>
+<div class="flex items-center space-x-3 mb-2">
+<i class="fa-solid fa-layer-group text-highlight-coral text-2xl"></i>
+<h1 class="text-4xl font-extrabold text-gray-800 font-poppins">Value Proposition</h1>
+</div>
+<p class="text-xl text-gray-500 font-light ml-1">The Core Pillars of <span class="text-primary-blue font-semibold">CareConnect</span></p>
+</div>
+<div class="bg-blue-50 px-4 py-2 rounded-lg">
+<span class="text-primary-blue font-semibold text-sm tracking-wide uppercase">Mission Brief</span>
+</div>
+</div>
+<!-- Main Grid Content -->
+<div class="grid grid-cols-2 gap-6 flex-grow">
+<!-- WHAT Quadrant -->
+<div class="quad-card bg-blue-50 rounded-2xl p-6 relative border-l-8 border-primary-blue flex flex-col justify-between">
+<div class="absolute top-4 right-6 text-primary-blue opacity-10 text-7xl">
+<i class="fa-solid fa-mobile-screen-button"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-primary-blue mb-4 font-poppins flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-blue text-white flex items-center justify-center text-lg shadow-sm">
+<i class="fa-solid fa-circle-info"></i>
+</div>
+                        WHAT
+                    </h2>
+<p class="text-gray-700 text-lg leading-relaxed font-medium">
+                        CareConnect is an <span class="text-primary-blue font-bold">on-demand mobile platform</span> that connects elderly individuals with verified, certified caregivers for daily living assistance.
+                    </p>
+</div>
+<div class="mt-4 flex items-center space-x-2 text-sm text-gray-500 bg-white bg-opacity-60 p-3 rounded-lg w-max">
+<i class="fa-solid fa-bolt text-yellow-500"></i>
+<span>Service delivered within minutes</span>
+</div>
+</div>
+<!-- WHO Quadrant -->
+<div class="quad-card bg-indigo-50 rounded-2xl p-6 relative border-l-8 border-dark-navy flex flex-col justify-between">
+<div class="absolute top-4 right-6 text-dark-navy opacity-10 text-7xl">
+<i class="fa-solid fa-users"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-dark-navy mb-4 font-poppins flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-dark-navy text-white flex items-center justify-center text-lg shadow-sm">
+<i class="fa-solid fa-user-group"></i>
+</div>
+                        WHO
+                    </h2>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 bg-white p-2 rounded-lg shadow-sm">
+<div class="mt-1"><i class="fa-solid fa-user-check text-dark-navy"></i></div>
+<div>
+<span class="block font-bold text-gray-800 text-sm">Care Receivers</span>
+<span class="text-xs text-gray-500">Elderly needing daily help (trash, groceries, medical)</span>
+</div>
+</li>
+<li class="flex items-start gap-3 bg-white p-2 rounded-lg shadow-sm">
+<div class="mt-1"><i class="fa-solid fa-briefcase-medical text-dark-navy"></i></div>
+<div>
+<span class="block font-bold text-gray-800 text-sm">Caregivers</span>
+<span class="text-xs text-gray-500">Certified CNAs/RNAs seeking flexible gig work</span>
+</div>
+</li>
+<li class="flex items-start gap-3 bg-white p-2 rounded-lg shadow-sm">
+<div class="mt-1"><i class="fa-solid fa-hands-holding-child text-dark-navy"></i></div>
+<div>
+<span class="block font-bold text-gray-800 text-sm">Families</span>
+<span class="text-xs text-gray-500">Loved ones seeking peace of mind &amp; transparency</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- HOW Quadrant -->
+<div class="quad-card bg-teal-50 rounded-2xl p-6 relative border-l-8 border-accent-teal flex flex-col justify-between">
+<div class="absolute top-4 right-6 text-accent-teal opacity-20 text-7xl">
+<i class="fa-solid fa-route"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-accent-teal mb-4 font-poppins flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-accent-teal text-white flex items-center justify-center text-lg shadow-sm">
+<i class="fa-solid fa-gears"></i>
+</div>
+                        HOW
+                    </h2>
+<p class="text-gray-700 text-lg mb-4 font-medium">The "Uber for Care" Model:</p>
+<div class="flex items-center justify-between text-center relative z-10">
+<div class="flex flex-col items-center w-1/3">
+<div class="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md mb-2 text-accent-teal">
+<i class="fa-solid fa-hand-pointer"></i>
+</div>
+<span class="text-xs font-bold text-gray-600">Request in App</span>
+</div>
+<div class="h-1 bg-gray-300 flex-grow mt-[-24px]"></div>
+<div class="flex flex-col items-center w-1/3">
+<div class="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md mb-2 text-accent-teal">
+<i class="fa-solid fa-car-side"></i>
+</div>
+<span class="text-xs font-bold text-gray-600">Fast Dispatch</span>
+</div>
+<div class="h-1 bg-gray-300 flex-grow mt-[-24px]"></div>
+<div class="flex flex-col items-center w-1/3">
+<div class="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md mb-2 text-accent-teal">
+<i class="fa-solid fa-star"></i>
+</div>
+<span class="text-xs font-bold text-gray-600">Track &amp; Rate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- WHY Quadrant -->
+<div class="quad-card bg-red-50 rounded-2xl p-6 relative border-l-8 border-highlight-coral flex flex-col justify-between">
+<div class="absolute top-4 right-6 text-highlight-coral opacity-10 text-7xl">
+<i class="fa-solid fa-heart-pulse"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-highlight-coral mb-4 font-poppins flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-highlight-coral text-white flex items-center justify-center text-lg shadow-sm">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+                        WHY
+                    </h2>
+<div class="flex items-end mb-3">
+<span class="text-5xl font-extrabold text-gray-800 tracking-tight">54M</span>
+<span class="text-lg text-gray-600 font-medium ml-2 mb-2">Americans over 65</span>
+</div>
+<p class="text-gray-700 leading-relaxed mb-3">
+                        Families are overwhelmed. Current solutions are <span class="bg-red-100 text-red-800 px-1 rounded">slow</span>, <span class="bg-red-100 text-red-800 px-1 rounded">expensive</span>, and <span class="bg-red-100 text-red-800 px-1 rounded">inflexible</span>.
+                    </p>
+<div class="bg-white p-3 rounded-lg border-l-4 border-highlight-coral shadow-sm">
+<p class="text-sm font-bold text-gray-800">CareConnect restores independence.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
